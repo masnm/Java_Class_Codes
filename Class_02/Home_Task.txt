@@ -1,0 +1,16 @@
+take a number as input from the user
+find all the all the divisiors of that number and put then into an array
+finally sum the divisors and print all the divisors and the summation
+
+
+// sample input / output
+
+Please Enter a number : 14
+Divisors are : 1 2 7 14
+Summation is : 24
+
+
+// sample two
+Please Enter a number : 12
+Divisors are : 1 2 3 4 6 12
+Summation is : 28
