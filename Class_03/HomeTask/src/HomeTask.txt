@@ -1,0 +1,31 @@
+Factorial
+
+1). write three different programs using for, while, do-while loops to calculate factorial
+
+2). 1 .. InputNumber put them into an array and Calculate factorial using the numbers in the array
+
+// sample 1
+Please Enter a Number : 5
+Factorial of 5 is : 120
+
+// sample 2
+Please Enter a Number : 4
+Factorial of 5 is : 24
+
+
+2D Array Task
+1). take tow 2D array of 3 row and 2 column,
+    fill first 2D array in range of numbers from 2 to 6
+    fill second 2d array in range of number from 5 to 9
+    
+    add those two 2D arrays into another 2D array and print this array.
+
+[ 6, 2 ]       [ 6, 5 ]
+[ 3, 4 ]       [ 7, 8 ]
+[ 2, 3 ]       [ 9, 6 ]
+
+[ 12, 7 ]
+[ 10, 12 ]
+[ 11, 9 ]
+    
+    
