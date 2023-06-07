@@ -1,0 +1,24 @@
+1. Write a method which takes two string as input FirstName and LastName and
+	return a string FullName which contains the FirstName and LastName;
+	
+	"Abu" "Ali" -> "Abu Ali"
+
+2. Take two string from the user as first name and last name and print the total name
+	using the method form task 1.
+
+3. Do the factorial homework using method
+
+ write three different programs using for, while, do-while loops to calculate factorial
+
+	1 .. InputNumber put them into an array and Calculate factorial using the numbers in the array
+
+// sample 1
+Please Enter a Number : 5
+Factorial of 5 is : 120
+
+// sample 2
+Please Enter a Number : 4
+Factorial of 5 is : 24
+
+public static int factroital ( int number ) {
+}
