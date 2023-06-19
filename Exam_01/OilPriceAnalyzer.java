@@ -6,10 +6,10 @@ import java.util.Scanner;
  * This class has the main method as the starting or entry poing java class should
  * have this class has five methods
  *
- * static double getAveragePrice ( double[], int )
- * static double getMaximumPrice ( double[], int )
- * static double getMinimumPrice ( double[], int )
- * static double getMedianPrice ( double[], int )
+ * static double getAveragePrice ( double[] )
+ * static double getMaximumPrice ( double[] )
+ * static double getMinimumPrice ( double[] )
+ * static double getMedianPrice ( double[] )
  * static void main ( String[] args )
  *
  * all the methods done as their name says. See more above the method defination
@@ -18,14 +18,15 @@ public class OilPriceAnalyzer {
 
     /*
      * Name: getAveragePrice
-     * Takes: Array of Double & an int
+     * Takes: Array of Double
      * return the average of the array. using the formula
      *
      *            Array[0] + Array[1] + ... + Array[n]
      * Average = -------------------------------------
      *                            n
      */
-    public static double getAveragePrice ( double [] oilPrices, int ArraySize ) {
+    public static double getAveragePrice ( double [] oilPrices ) {
+        int ArraySize = oilPrices.length;
         double Summation = 0.0;
         for ( int i = 0; i < ArraySize; i++ ) {
             Summation += oilPrices[i];
@@ -35,7 +36,7 @@ public class OilPriceAnalyzer {
 
     /*
      * Name: getMaximumPrice
-     * Takes: Array of double & an int
+     * Takes: Array of double
      * Returns: Maximum of the array
      *
      * uses a linear approach to find out the maximum number
@@ -44,7 +45,8 @@ public class OilPriceAnalyzer {
      * and if current element is greater than current maximum then update the maximum
      * with current element
      */
-    public static double getMaximumPrice ( double [] oilPrices, int ArraySize ) {
+    public static double getMaximumPrice ( double [] oilPrices ) {
+        int ArraySize = oilPrices.length;
         double Maximum = oilPrices[0];
         for ( int i = 0; i < ArraySize; i++ ) {
             double temp = oilPrices[i];
@@ -57,7 +59,7 @@ public class OilPriceAnalyzer {
 
     /*
      * Name: getMinimumPrice
-     * Takes: Array of double & an int
+     * Takes: Array of double
      * Returns: Minimum of the array
      *
      * uses a linear approach to find out the minimum number
@@ -66,7 +68,8 @@ public class OilPriceAnalyzer {
      * and if current element is greater than current minimum the update the maximum
      * with current element
      */
-    public static double getMinimumPrice ( double [] oilPrices, int ArraySize ) {
+    public static double getMinimumPrice ( double [] oilPrices ) {
+        int ArraySize = oilPrices.length;
         double Minimum = oilPrices[0];
         for ( int i = 0; i < ArraySize; i++ ) {
             double temp = oilPrices[i];
@@ -79,7 +82,7 @@ public class OilPriceAnalyzer {
 
     /*
      * Name: getMedianPrice
-     * Takes: Array of double and an int
+     * Takes: Array of double
      * Returns: median value of the array
      *
      * for an even sized array this method uses the below formula
@@ -98,7 +101,8 @@ public class OilPriceAnalyzer {
      * median = Array[median_index]
      *
      */
-    public static double getMedianPrice ( double [] oilPrices, int ArraySize ) {
+    public static double getMedianPrice ( double [] oilPrices ) {
+        int ArraySize = oilPrices.length;
         Arrays.sort ( oilPrices );
         if ( ArraySize % 2 == 0 ) {
             // for the even sized array
@@ -151,22 +155,22 @@ public class OilPriceAnalyzer {
         System.out.println ( "Here are the statistics for the prices entered:" );
 
         // calculating the Average Price using method getAveragePrice and printing the average
-        double AveragePrice = getAveragePrice ( oilPrices, ArraySize );
+        double AveragePrice = getAveragePrice ( oilPrices );
         Message = String.format ( "The average price was $%.2f per barrel", AveragePrice );
         System.out.println ( Message );
 
         // calculating the MaximumPrice using method getMaximumPrice and printing the maximum
-        double MaxPrice = getMaximumPrice ( oilPrices, ArraySize );
+        double MaxPrice = getMaximumPrice ( oilPrices );
         Message = String.format ( "The highest daily price was $%.2f per barrel", MaxPrice );
         System.out.println ( Message );
 
         // calculating the MinimumPrice using method getMinimumPrice and printing the minimum
-        double MinPrice = getMinimumPrice ( oilPrices, ArraySize );
+        double MinPrice = getMinimumPrice ( oilPrices );
         Message = String.format ( "The lowest daily price was $%.2f per barrel", MinPrice );
         System.out.println ( Message );
 
         // calculating the median using method getMedianPrice and printing the median
-        double MedianPrice = getMedianPrice ( oilPrices, ArraySize );
+        double MedianPrice = getMedianPrice ( oilPrices );
         Message = String.format ( "The median price of all the daily prices was $%.2f", MedianPrice );
         System.out.println ( Message );
     }
