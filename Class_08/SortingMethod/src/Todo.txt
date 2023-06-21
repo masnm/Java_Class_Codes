@@ -1,0 +1,6 @@
+1. [X] Bubble sort
+1. [X] Bubble sort optimization 01
+2. [X] Recursive method
+3. [X] Generic Method
+4. Generic Bubble Sort
+5. Insertion / Selection sort
