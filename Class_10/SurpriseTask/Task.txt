@@ -1,0 +1,131 @@
+
+1. Write a java program to convert a decimal number from octal number base 8
+    in both recursive and using loop.
+
+
+1. Write a java program to convert a number from base 10 to base 2.
+	i.e. from decimal number to binary number.
+
+2. Write the program using loop and recursion both.
+
+
+0 1 2 3 4 5 6 7 8 9                base 10
+0 1                                base 2
+0 1  2 3 4 5 6 7                   octal number base 8
+0 1 2 3 4 5 6 7 8 9 A B C D E F    Hex digits.
+
+
+decimal     binary
+  000   -    000
+  001   -    001
+  002   -    010
+  003   -    011
+  004   -    100
+             101
+             110
+             111
+            1000
+            1001
+  
+  
+  
+  binary addition
+     01100010
+     00101001
+ -----------------
+     10001011
+  
+  009
+  010
+  
+  019
+  020
+  
+  for ( int i = 0 ; i< 50 ; i++ ) {
+  }
+  
+  
+  27  -> in deciaml
+  base 2 convert
+  
+  2 | 27  |
+--------------------
+  2 | 13  | 1
+--------------------
+  2 | 6   | 1
+-------------------
+  2 | 3   | 0
+-------------------
+  2 | 1   | 1
+-------------------
+  2 | 0   | 1
+  
+  write the remainder from bottom to top
+  
+  (27) base 10 ==  (11011) in base 2
+  
+  
+                 2^3  2^2  2^1  2^0
+                  8    4    2    1
+                  
+            ....   64   32   16   8    4   2  1
+                              1   1    0   1  1
+                              
+                              16+8+2+1 = 27
+
+
+
+fact ( n )
+seriessum ( n );
+      
+                         20
+                         /      \
+                      5 *  4
+                      /     \
+                      6  *  3 
+                  /    \
+                 2
+               /
+               1
+          
+                      
+                      
+      27 & 4 = 0
+      27 & 6 = 2
+      
+  11011  -> 27
+  00110  -> 6
+---------------
+  00010  -> 2      
+  
+
+
+10000000000000000000000  << 31
+01000000000000000000000
+00100000000000000000000
+
+00000000000000000000000
+10000000000000000000000
+do Bitwise and if ans is 0 then bit is 0
+els bit it 1
+
+
+   <010110> . <010101>              
+   0000000001000000000
+--------------------------   &
+   0000000001000000000
+        
+        
+    00000000001011  <<  3
+    00000001011000
+    
+    
+    00000000001011  >>  1
+    00000000000101
+    
+                      
+               
+             27  &&  4   -> true     
+                      
+                      
+  
