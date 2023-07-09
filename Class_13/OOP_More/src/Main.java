@@ -2,6 +2,12 @@
 import java.util.ArrayList;
 
 public class Main {
+	
+	private String name;
+	
+	public Main () {
+		this.name = "ABC";
+	}
 
 	public static void main(String[] args) {
 		
