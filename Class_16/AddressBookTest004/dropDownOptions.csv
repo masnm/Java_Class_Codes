@@ -1,0 +1,11 @@
+addr_type,addr_phone_1_type,addr_phone_2_type,addr_phone_3_type
+Friend,Work Fax,Work,Home
+Business,Home,Mobile,Home
+Friend,Home,Work,Work Fax
+Business,Home,Mobile,Work Fax
+Family,Work Fax,Work Fax,Home Fax
+Other,Work Fax,Home,Work Fax
+Friend,Mobile,Work Fax,Work Fax
+Other,Work Fax,Home,Home
+Family,Work Fax,Mobile,Work
+Business,Work Fax,Home,Home
