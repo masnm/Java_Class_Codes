@@ -31,15 +31,27 @@ public class IndustrialPlaza extends Warehouse {
 	
 	@Override
 	public void getBuildingDetails () {
-		System.out.println ( "Class : IndustrialPlaza" );
-		System.out.println ( "Building Type : IndustrialPlaza" );
-		System.out.println ( "Total Area : " + 
-								this.getArea() * (double)this.numUnits );
-		System.out.println ( "Num units : " + this.getNumUnits () );
-		System.out.println ( "Usage : " + this.getUsage() );
-		System.out.println ( "Percent Storage : " + this.getPercentStorage() );
-		System.out.println ( "Rooms : " + this.getRooms() );
+		String s = "Building Type : " + this.getType() + "\n"
+				+ "Unit Area : " + this.getArea() + " Square feet on " + this.getNumFloors() + " floor(s)\n"
+				+ "Number of Rooms : " + this.getRooms() + " Rooms with storage accounting for " + this.getPercentStorage() * 100.0 + " percent space\n"
+				+ "We have " + this.getNumUnits() + " units with a combined total area of " + this.getArea() * (double)this.getNumUnits() + " square feet.\n"
+				+ "This Industrial Plaza is designated for " + this.getUsage() + " only.";
+		System.out.println ( s );
 		System.out.println ( "" );
+	}
+	
+	@Override
+	public String toString () {
+		String s = "Type of building : " + this.getType() + "\n"
+				+ "Unit length : " + this.getLength() + "\n"
+				+ "Unit width : " + this.getWidth() + "\n"
+				+ "Number of floors in each unit : " + this.getNumFloors() + "\n"
+				+ "Area of each unit : " + this.getArea() + "\n"
+				+ "Number of rooms in each unit : " + this.getRooms() + "\n"
+				+ "Storage space in this unit : " + this.getPercentStorage() * 100.0 + "\n"
+				+ "Number of units in this industrial plaza : " + this.getNumUnits() + "\n"
+				+ "This industrila plaza is designed for " + this.getUsage() + " usage\n";
+		return s;
 	}
 	
 }

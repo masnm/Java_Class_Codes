@@ -51,15 +51,25 @@ public class RowHouse extends Building {
 
 	@Override
 	public void getBuildingDetails() {
-		System.out.println ( "Class : " + this.getClass().getName() );
-		System.out.println ( "Type : "  + this.getClass().getName() );
-		System.out.println ( "Total Area : " + this.getArea() * (double)this.numUnits );
-		System.out.println ( "Units : " + this.getNumUnits() );
-		System.out.println ( "Beds : " + this.getNumBeds() );
-		System.out.println ( "Bath : " + this.getNumBaths() );
+		String s = "Building Type : " + this.getType() + " which has " + this.getNumUnits() + " living units on one level.\n"
+				+ "Unit Area : " + this.getArea() + " Square feet on " + this.getNumFloors() + " floor(s)\n"
+				+ "Total area of all units on one floor is " + this.getArea() * (double)this.getNumUnits() + " square feet.\n"
+				+ "Number of bedrooms: " + this.getNumBeds() + ". Number of bathrooms: " + this.getNumBaths() + ".";
+		System.out.println ( s );
 		System.out.println ( "" );
 	}
 	
-	
+	@Override
+	public String toString () {
+		String s = "Type of building : " + this.getType() + "\n"
+				+ "Unit length : " + this.getLength() + "\n"
+				+ "Unit width : " + this.getWidth() + "\n"
+				+ "Number of floors in each unit : " + this.getNumFloors() + "\n"
+				+ "Area of each unit : " + this.getArea() + "\n"
+				+ "Number of bathrooms in each unit: " + this.getNumUnits() + "\n"
+				+ "Number of bedrooms in each unit: " + this.getNumBeds() + "\n"
+				+ "Number of units: " + this.getNumUnits() + "\n";
+		return s;
+	}
 	
 }

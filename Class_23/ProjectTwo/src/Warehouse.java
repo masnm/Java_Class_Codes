@@ -35,11 +35,23 @@ public class Warehouse extends Building {
 
 	@Override
 	public void getBuildingDetails() {
-		System.out.println ( "Class : Wearhouse" );
-		System.out.println ( "Building Type : Wearhouse" );
-		System.out.println ( "Percent Storage : " + this.getPercentStorage() );
-		System.out.println ( "Rooms : " + this.getRooms() );
+		String s = "Building Type : " + this.getType() + "\n"
+				+ "Unit Area : " + this.getArea() + " Square feet on " + this.getNumFloors() + " floor(s)\n"
+				+ "Number of Rooms : " + this.getRooms() + " Rooms with storage accounting for " + this.getPercentStorage() * 100.0 + " percent space";
+		System.out.println ( s );
 		System.out.println ( "" );
 	}
 	
+	@Override
+	public String toString () {
+		String s = "Type of building : " + this.getType() + "\n"
+				+ "Unit length : " + this.getLength() + "\n"
+				+ "Unit width : " + this.getWidth() + "\n"
+				+ "Number of floors : " + this.getNumFloors() + "\n"
+				+ "Area of this unit : " + this.getArea() + "\n"
+				+ "Number of rooms in this unit : " + this.getRooms() + "\n"
+				+ "Storage space in this unit : " + this.getPercentStorage() * 100.0 + "\n";
+		return s;
+	}
+
 }
