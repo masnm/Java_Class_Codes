@@ -1,4 +1,12 @@
 
+/**
+ * Filename: Shape.java
+ * Author: Bidushi Kabir
+ * Date:   2023-08-01
+ * Description: This is the main test class to demonstrate the functionality of the Shape, Ball, and Box classes.
+ */
+
+
 public abstract class Shape {
 	private String type;
 	private String color;

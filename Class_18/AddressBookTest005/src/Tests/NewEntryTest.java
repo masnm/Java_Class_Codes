@@ -51,7 +51,7 @@ public class NewEntryTest {
 	
 	@Before
     public void setUp() throws Exception {
-		System.setProperty( "webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty( "webdriver.chrome.driver", "driver/chromedriver.exe");
 		driver = new ChromeDriver ();
     }
 	
