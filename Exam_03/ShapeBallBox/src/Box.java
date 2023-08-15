@@ -1,4 +1,11 @@
 
+
+/**
+ * Filename: Box.java
+ * Author: Bidushi Kabir
+ * Date: 2023-08-01
+ * Description: This class represents a Box, which is a subclass of the Shape class.
+ */
 public class Box extends Shape {
 	
 	private double length;
